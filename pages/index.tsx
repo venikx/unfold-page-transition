@@ -32,9 +32,10 @@ const Home: NextPage = () => {
             <Image
               src="/tokyo.jpg"
               alt="Tokyo at Nigh"
-              width={250}
-              height={250}
+              width={750}
+              height={750}
               layout="responsive"
+              objectFit="cover"
             />
           </motion.figure>
           <h2>Lost in Tokyo</h2>
