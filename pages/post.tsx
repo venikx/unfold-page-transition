@@ -1,7 +1,8 @@
+import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
-import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Post.module.css'
 
 const Post: NextPage = () => {
@@ -25,9 +26,13 @@ const Post: NextPage = () => {
                     </Link>
                 </nav>
                 <main className={styles.main}>
-                    <h1 >Lost in Tokyo</h1>
+                    <motion.h1 initial={{ y: -50 }} animate={{ y: 0 }}
+                        transition={{ type: "spring", delay: .1, bounce: 0.6 }} >Lost in Tokyo</motion.h1>
                     <div className={styles.attribution}>
-                        <h2>By Jonathan Vik</h2>
+                        <motion.h2
+                            initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
+                            transition={{ type: "spring", delay: .3 }}
+                        >By Jonathan Vik</motion.h2>
                         <span>6 &#x1F4AC;</span>
                     </div>
                 </main>
