@@ -36,7 +36,7 @@
 }
 
 .figure img {
-    filter: brightness(60%);
+  filter: brightness(60%);
 }
 
 .figure > span {

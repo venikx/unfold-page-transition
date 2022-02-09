@@ -1,22 +1,22 @@
 .imageContainer {
-    position: relative
+  position: relative;
 }
 
 .figure img {
-    filter: brightness(60%);
+  filter: brightness(60%);
 }
 
 .container {
-    isolation: isolate;
-    min-height: 100vh;
-    color: var(--dark-text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  isolation: isolate;
+  min-height: 100vh;
+  color: var(--dark-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container nav {
-    padding: 16px;
+  padding: 16px;
 }
 
 .main {
@@ -32,13 +32,13 @@
 }
 
 .attribution {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .attribution h2 {
-    padding-left: 8px;
+  padding-left: 8px;
   font-size: 1.2rem;
   font-weight: normal;
 }
