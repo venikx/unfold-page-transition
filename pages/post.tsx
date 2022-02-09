@@ -7,15 +7,25 @@ import styles from '../styles/Post.module.css'
 
 const Post: NextPage = () => {
     return (
-        <div className={styles.imageContainer}>
+        <motion.div className={styles.imageContainer}
+            layout
+            layoutId="to-post"
+            initial={{ scale: 0.75 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.75 }}
+            transition={{ type: "tween", ease: "easeInOut" }}
+        >
             <Head>
                 <title>Lost in Tokyo</title>
                 <meta name="description" content="Lost in Tokyo - Jonathan Vik" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <figure className={styles.figure}>
-                <Image src="/tokyo.jpg" alt="Tokyo at Nigh" objectFit="cover" layout="fill" />
+            <figure className={styles.figure}
+            >
+                <Image src="/tokyo.jpg" alt="Tokyo at Nigh" objectFit="cover" layout="fill"
+
+                />
             </figure>
             <div className={styles.container}>
                 <nav>
@@ -37,7 +47,7 @@ const Post: NextPage = () => {
                     </div>
                 </main>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
