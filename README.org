@@ -1,0 +1,32 @@
+#+title: Unfold | Page Transitions
+
+* TL;DR
+** Can I see this live somewhere?
+You betcha! [[https://unfold-page-transition.vercel.app/][Unfold | Shared by you]]
+** Can I run this myself?
+For sure! (assuming you have node installed)
+
+#+begin_src sh
+git clone https://github.com/venikx/unfold-page-transition.git
+cd unfold-page-transition
+npm run dev
+#+end_src
+
+* My thoughts
+First, I want to start out with saying that this third exercise was an *absolute
+blast* for multiple reasons. I was able to use some nifty CSS I learned not so
+long ago to deal with overlaying elements, and more importantly the page
+transitions and micro-animations were really fun to make /(although I don't
+think they are perfect yet, compared to the example/).
+
+For the =page transition= exercise I really wanted to focus on cranking out two
+pages, so I could spend most of my time on the animations. I haven't worked with
+many animations before (I've only done some basics with pure CSS), so I wanted
+to try out more "batteries included" library called ~framer-motion~.
+
+The current implementation of the CSS is missing a couple finishing touches:
+- improper typography
+- the distances between the elements might not be pixel perfect
+
+Overall, I thoroughly enjoyed the technical test and it was extremely fun to
+fiddle around with the animations.
