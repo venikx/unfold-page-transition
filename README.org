@@ -27,6 +27,7 @@ to try out more "batteries included" library called ~framer-motion~.
 The current implementation of the CSS is missing a couple finishing touches:
 - improper typography
 - the distances between the elements might not be pixel perfect
+- took shortcuts regarding the icons
 
 Overall, I thoroughly enjoyed the technical test and it was extremely fun to
 fiddle around with the animations.
